@@ -15,7 +15,7 @@
     transform: translateZ(0);
   }
   .parallax__layer--back {
-    transform: translateZ(-1px);
+    transform: translateZ(-1px) scale(2);
   }
   .parallax__group {
     position: relative;
