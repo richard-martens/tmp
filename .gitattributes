@@ -1,0 +1,8 @@
+# Declare files that will always have LF line endings on checkout.
+* text eol=lf
+*.json eol=lf
+*.jpeg -text
+*.png -text
+*.svg -text
+*.jpg -text
+*.ico -text
