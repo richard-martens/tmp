@@ -1,6 +1,12 @@
+body {
+  margin: 0;
+}
+
 .parallax {
-    perspective: 1px;
-    height: 100vh;
+    perspective: 300px;
+    -webkit-perspective: 300px;
+    height: 1000px;
+    height: 200vh;
     overflow-x: hidden;
     overflow-y: auto;
   }
@@ -12,13 +18,27 @@
     left: 0;
   }
   .parallax__layer--base {
+    -webkit-transform: translate(0);
     transform: translateZ(0);
+    z-index: 4;
   }
   .parallax__layer--back {
-    transform: translateZ(-1px) scale(2);
+    -webkit-transform: translateZ(-300px);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
   }
   .parallax__group {
     position: relative;
+    height: 500px;
     height: 100vh;
+    -webkit-transform-style: preserve 3d;
     transform-style: preserve-3d;
+    z-index: 3;
+    transition: transform 0.5s;
+    -webkit-transition: -webkit-transform 0.5s;
+  }
+
+  .parallax__layer--base article {
+    background-color: whitesmoke;
+    padding: 10px;
   }
