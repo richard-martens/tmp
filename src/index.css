@@ -1,0 +1,23 @@
+
+.upper_case {
+    text-transform: uppercase;
+}
+
+.padding_small {
+    padding: 10px;
+}
+
+.padding_middle {
+    padding: 20px;
+}
+
+.padding_big {
+    padding: 40px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
